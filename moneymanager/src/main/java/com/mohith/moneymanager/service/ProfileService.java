@@ -29,7 +29,7 @@ public class ProfileService {
     private final JwtUtils jwtUtils;
 
     @Value("${backend.url}")
-    private final String backendUrl;
+    private String backendUrl;
 
     public ProfileDto registerProfile(ProfileDto profileDto){
         ProfileEntity newProfile = toEntity(profileDto);
