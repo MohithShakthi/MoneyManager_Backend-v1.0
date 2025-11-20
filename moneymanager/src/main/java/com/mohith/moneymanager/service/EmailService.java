@@ -26,6 +26,14 @@ public class EmailService {
 
     public String sendEmail(String to, String subject, String body){
 
+        System.out.println("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&");
+
+        System.out.println(apiKey);
+        System.out.println(senderEmail);
+        System.out.println(senderName);
+
+        System.out.println("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&");
+
         String url = "https://api.brevo.com/v3/smtp/email";
         Map<String, Object> content = Map.of(
                 "sender", Map.of(
