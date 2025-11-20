@@ -17,7 +17,7 @@ public class JwtUtils {
     @Value("${jwt.secret}")
     private String secretKey;
 
-    private final int jwtExpirationTime = 1000 * 60 * 5;
+    private final int jwtExpirationTime = 1000 * 60 * 60 * 8;
 
     private Claims getAllClaims(String token){
         return Jwts.parser()

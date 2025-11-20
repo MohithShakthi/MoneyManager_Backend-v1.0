@@ -38,10 +38,7 @@ public class ProfileService {
         String activationLink = backendUrl + "/api/v1.0/activate?token=" + newProfile.getActivationToken();
         String subject = "Active your money manager account";
         String body = "Click on the link to activate your account : " + activationLink;
-        System.out.println("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&");
         String str = emailService.sendEmail(newProfile.getEmail(), subject,body);
-        System.out.println("return :" + str);
-        System.out.println("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&");
         return toDto(newProfile);
     }
 
