@@ -59,9 +59,9 @@ public class DashBoardService {
                 .subtract(expenseService.getTotalExpenseForCurrentUser()));
         returnMap.put("totalIncome",incomeService.getTotalIncomeForCurrentUser());
         returnMap.put("totalExpense", expenseService.getTotalExpenseForCurrentUser());
-        returnMap.put("recentIncome", incomeService.getLatest5IncomesForCurrentUser());
-        returnMap.put("recentExpense", expenseService.getLatest5ExpensesForCurrentUser());
-        returnMap.put("recentTransaction", recentTransactions);
+        returnMap.put("recentIncomes", incomeService.getLatest5IncomesForCurrentUser());
+        returnMap.put("recentExpenses", expenseService.getLatest5ExpensesForCurrentUser());
+        returnMap.put("recentTransactions", recentTransactions);
         return  returnMap;
     }
 }
