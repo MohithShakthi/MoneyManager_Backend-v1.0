@@ -59,6 +59,7 @@ public class ProfileService {
                 .id(profileEntity.getId())
                 .fullName(profileEntity.getFullName())
                 .email(profileEntity.getEmail())
+                .profileImageUrl(profileEntity.getProfileImageUrl())
                 .createdAt(profileEntity.getCreatedAt())
                 .updatedAt(profileEntity.getUpdatedAt())
                 .build();
